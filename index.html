@@ -1,0 +1,1034 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Coach Shay's Training Ground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- STICKY NAV -->
+    <nav id="main-nav">
+      <div class="nav-logo">CASE FILES</div>
+      <a
+        class="nav-link"
+        href="#section-tongue-twister"
+        data-section="tongue-twister"
+      >
+        WARM-UP
+      </a>
+      <a class="nav-link locked" href="#section-level1" data-section="level1">
+        <span class="lock-icon">🔒</span> LVL 1
+      </a>
+      <a class="nav-link locked" href="#section-level2" data-section="level2">
+        <span class="lock-icon">🔒</span> LVL 2
+      </a>
+      <a class="nav-link locked" href="#section-level3" data-section="level3">
+        <span class="lock-icon">🔒</span> LVL 3
+      </a>
+      <a class="nav-link locked" href="#section-level4" data-section="level4">
+        <span class="lock-icon">🔒</span> LVL 4
+      </a>
+      <a class="nav-link locked" href="#section-level5" data-section="level5">
+        <span class="lock-icon">🔒</span> LVL 5
+      </a>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="site-header">
+      <div class="tape-stripe">
+        <span class="tape-text">
+          CRIME SCENE — DO NOT CROSS &nbsp;&nbsp;&nbsp; CRIME SCENE — DO NOT
+          CROSS &nbsp;&nbsp;&nbsp; CRIME SCENE — DO NOT CROSS &nbsp;&nbsp;&nbsp;
+          CRIME SCENE — DO NOT CROSS &nbsp;&nbsp;&nbsp; CRIME SCENE — DO NOT
+          CROSS &nbsp;&nbsp;&nbsp; CRIME SCENE — DO NOT CROSS &nbsp;&nbsp;&nbsp;
+        </span>
+      </div>
+      <div class="header-title">COACH SHAY'S<br />TRAINING GROUND</div>
+      <div class="header-sub">SPATIAL AWARENESS // EVIDENCE PLACEMENT</div>
+      <div class="case-number">
+        CASE FILE &nbsp; #ESL-7-PREP &nbsp; // SEOUL DIVISION
+      </div>
+    </header>
+
+    <!-- SECTION: TONGUE TWISTER -->
+    <section id="section-tongue-twister" class="section-block">
+      <!-- populated by tongue-twister.js -->
+    </section>
+
+    <!-- SECTION: LEVEL 1 -->
+    <!-- SECTION: LEVEL 1 -->
+    <section id="section-level1" class="section-block">
+      <div class="section-label">LEVEL 01</div>
+      <div class="section-title">Basic Spatial Awareness</div>
+
+      <!-- LOCK GATE -->
+      <div id="level1-lock">
+        <div class="lock-card">
+          <div class="lock-big">🔒</div>
+          <p>ENTER ACCESS CODE TO UNLOCK THIS SECTION</p>
+          <input
+            class="lock-input"
+            type="text"
+            placeholder="_ _ _ _ _ _"
+            autocomplete="off"
+            autocapitalize="characters"
+            id="lock-input-level1"
+          />
+          <button class="lock-btn" onclick="checkPassword('level1')">
+            UNLOCK
+          </button>
+          <div class="lock-error" id="lock-error-level1"></div>
+        </div>
+      </div>
+
+      <!-- SECTION BODY -->
+      <div id="level1-body" style="display: none">
+        <!-- PART 1: TEACH -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 01 // EVIDENCE REVIEW
+        </div>
+        <p
+          style="
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--chalk-dim);
+            margin-bottom: 40px;
+            line-height: 1.7;
+          "
+        >
+          Study each image. Read the sentence out loud. Say it again, faster.
+        </p>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin-bottom: 48px;
+          "
+        >
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level1/ball-on.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                ON
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is ON the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                The ball is touching the top surface.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level1/ball-under.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                UNDER
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is UNDER the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                The ball is below. The box is above it.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level1/ball-nextTo.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                NEXT TO
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is NEXT TO the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Side by side. Touching or very close.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level1/ball-in.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                IN
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is IN the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Inside. The box surrounds the ball.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr
+          style="
+            border: none;
+            border-top: 1px solid var(--border);
+            margin-bottom: 40px;
+          "
+        />
+
+        <!-- PART 2: QUIZ -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 02 // IDENTIFY THE EVIDENCE
+        </div>
+        <div id="l1-quiz">
+          <p
+            style="
+              font-family: var(--font-mono);
+              font-size: 13px;
+              color: var(--muted);
+            "
+          >
+            Loading quiz...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: LEVEL 2 -->
+    <section id="section-level2" class="section-block">
+      <div class="section-label">LEVEL 02</div>
+      <div class="section-title">Relative Space</div>
+
+      <!-- LOCK GATE -->
+      <div id="level2-lock">
+        <div class="lock-card">
+          <div class="lock-big">🔒</div>
+          <p>ENTER ACCESS CODE TO UNLOCK THIS SECTION</p>
+          <input
+            class="lock-input"
+            type="text"
+            placeholder="_ _ _ _ _ _"
+            autocomplete="off"
+            autocapitalize="characters"
+            id="lock-input-level2"
+          />
+          <button class="lock-btn" onclick="checkPassword('level2')">
+            UNLOCK
+          </button>
+          <div class="lock-error" id="lock-error-level2"></div>
+        </div>
+      </div>
+
+      <!-- SECTION BODY -->
+      <div id="level2-body" style="display: none">
+        <!-- PART 1: TEACH -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 01 // EVIDENCE REVIEW
+        </div>
+        <p
+          style="
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--chalk-dim);
+            margin-bottom: 40px;
+            line-height: 1.7;
+          "
+        >
+          These words describe space without touching. The ball and the box are
+          not making contact.
+        </p>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin-bottom: 48px;
+          "
+        >
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level2/ball-above.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                ABOVE
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is ABOVE the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Higher in space. Not touching.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level2/ball-behind.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                BEHIND
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is BEHIND the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                The box is blocking part of the ball. The ball is further away.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level2/ball-infrontOf.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                IN FRONT OF
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is IN FRONT OF the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                The ball is closer to you than the box is.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level2/ball-near.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                NEAR
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is NEAR the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Close but not touching. There is a small gap.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level2/ball-far.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                FAR FROM
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is FAR FROM the box.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                A large distance between them. Not close at all.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr
+          style="
+            border: none;
+            border-top: 1px solid var(--border);
+            margin-bottom: 40px;
+          "
+        />
+
+        <!-- PART 2: QUIZ -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 02 // IDENTIFY THE EVIDENCE
+        </div>
+        <div id="l2-quiz">
+          <p
+            style="
+              font-family: var(--font-mono);
+              font-size: 13px;
+              color: var(--muted);
+            "
+          >
+            Loading quiz...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: LEVEL 3 -->
+    <section id="section-level3" class="section-block">
+      <div class="section-label">LEVEL 03</div>
+      <div class="section-title">Canvas Grid</div>
+
+      <!-- LOCK GATE -->
+      <div id="level3-lock">
+        <div class="lock-card">
+          <div class="lock-big">🔒</div>
+          <p>ENTER ACCESS CODE TO UNLOCK THIS SECTION</p>
+          <input
+            class="lock-input"
+            type="text"
+            placeholder="_ _ _ _ _ _"
+            autocomplete="off"
+            autocapitalize="characters"
+            id="lock-input-level3"
+          />
+          <button class="lock-btn" onclick="checkPassword('level3')">
+            UNLOCK
+          </button>
+          <div class="lock-error" id="lock-error-level3"></div>
+        </div>
+      </div>
+
+      <!-- SECTION BODY -->
+      <div id="level3-body" style="display: none">
+        <!-- PART 1: TEACH -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 01 // EVIDENCE REVIEW
+        </div>
+        <p
+          style="
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--chalk-dim);
+            margin-bottom: 40px;
+            line-height: 1.7;
+          "
+        >
+          Imagine the screen is divided into 4 corners and a center. Where
+          exactly is the ball?
+        </p>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            margin-bottom: 48px;
+          "
+        >
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level3/ball-center.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                CENTER
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is in the CENTER.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Equal distance from all four edges.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level3/ball-offCenter.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                OFF-CENTER
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is OFF-CENTER.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Close to the middle but not quite. Shifted to one side.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level3/ball-topLeft.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                TOP LEFT
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is in the TOP LEFT corner.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                High up, on the left side.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              max-width: 700px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <img
+              src="assets/level3/ball-bottomRight.png"
+              style="width: 100%; display: block"
+            />
+            <div style="padding: 24px; text-align: center">
+              <div
+                style="
+                  font-family: var(--font-display);
+                  font-size: 48px;
+                  color: var(--tape);
+                "
+              >
+                BOTTOM RIGHT
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 18px;
+                  color: var(--chalk);
+                  margin: 10px 0;
+                "
+              >
+                The ball is in the BOTTOM RIGHT corner.
+              </div>
+              <div
+                style="
+                  font-family: var(--font-mono);
+                  font-size: 13px;
+                  color: var(--muted);
+                "
+              >
+                Low down, on the right side.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr
+          style="
+            border: none;
+            border-top: 1px solid var(--border);
+            margin-bottom: 40px;
+          "
+        />
+
+        <!-- PART 2: FULL REVIEW QUIZ -->
+        <div class="section-label" style="margin-bottom: 8px">
+          PART 02 // FULL EVIDENCE REVIEW
+        </div>
+        <p
+          style="
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--chalk-dim);
+            margin-bottom: 32px;
+            line-height: 1.7;
+          "
+        >
+          All words. All levels. Pick the image that matches the sentence.
+        </p>
+        <div id="l3-quiz">
+          <p
+            style="
+              font-family: var(--font-mono);
+              font-size: 13px;
+              color: var(--muted);
+            "
+          >
+            Loading quiz...
+          </p>
+        </div>
+
+        <!-- FLAPPY BIRD PLACEHOLDER -->
+        <div id="l3-reward" style="display: none">
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--border);
+              margin: 48px 0;
+            "
+          />
+          <div class="section-label" style="margin-bottom: 8px">
+            REWARD // CASE CLOSED
+          </div>
+          <div
+            style="
+              background: var(--surface);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 40px;
+              text-align: center;
+              max-width: 700px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              style="
+                font-family: var(--font-display);
+                font-size: 32px;
+                color: var(--tape);
+                margin-bottom: 12px;
+              "
+            >
+              FLAPPY BIRD
+            </div>
+            <div
+              style="
+                font-family: var(--font-mono);
+                font-size: 13px;
+                color: var(--chalk-dim);
+                margin-bottom: 8px;
+              "
+            >
+              Coming soon. You earned it.
+            </div>
+            <div class="tag">SCORE 8/10 OR HIGHER TO UNLOCK</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: LEVEL 4 -->
+    <section id="section-level4" class="section-block">
+      <div class="section-label">LEVEL 04</div>
+      <div class="section-title">The Room</div>
+
+      <!-- LOCK GATE -->
+      <div id="level4-lock">
+        <div class="lock-card">
+          <div class="lock-big">🔒</div>
+          <p>ENTER ACCESS CODE TO UNLOCK THIS SECTION</p>
+          <input
+            class="lock-input"
+            type="text"
+            placeholder="_ _ _ _ _ _"
+            autocomplete="off"
+            autocapitalize="characters"
+            id="lock-input-level4"
+          />
+          <button class="lock-btn" onclick="checkPassword('level4')">
+            UNLOCK
+          </button>
+          <div class="lock-error" id="lock-error-level4"></div>
+        </div>
+      </div>
+
+      <!-- SECTION BODY -->
+      <div id="level4-body" style="display: none">
+        <div id="l4-app"></div>
+      </div>
+    </section>
+
+    <!-- SECTION: LEVEL 5 -->
+    <section id="section-level5" class="section-block">
+      <div class="section-label">LEVEL 05 // RESTRICTED</div>
+      <div class="section-title">The Bedroom Scene</div>
+      <div id="level5-content"></div>
+    </section>
+
+    <!-- SCRIPTS: shared utilities first -->
+    <script src="shared/passwords.js"></script>
+    <script src="shared/lock.js"></script>
+    <script src="shared/grading.js"></script>
+
+    <!-- SCRIPTS: sections -->
+    <script src="sections/tongue-twister.js"></script>
+    <script src="sections/level1.js"></script>
+    <script src="sections/level2.js"></script>
+    <script src="sections/level3.js"></script>
+    <script src="sections/level4.js"></script>
+    <script src="sections/level5.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        initTongueTwister();
+
+        initLevel1();
+        initLevel2();
+        initLevel3();
+        initLevel4();
+
+        document.querySelectorAll(".nav-link.locked").forEach((link) => {
+          link.addEventListener("click", (e) => e.preventDefault());
+        });
+      });
+    </script>
+  </body>
+</html>

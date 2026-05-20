@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;600&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --bg:           #0d0d0d;
+  --surface:      #151515;
+  --surface2:     #1c1c1c;
+  --tape:         #f5c518;
+  --tape-dark:    #c9a010;
+  --chalk:        #e8e6df;
+  --chalk-dim:    #9e9b92;
+  --blood:        #8b1a1a;
+  --evidence:     #1a3a5c;
+  --text:         #e8e6df;
+  --muted:        #6b6860;
+  --border:       rgba(245,197,24,0.2);
+  --radius:       8px;
+  --font-display: 'Special Elite', cursive;
+  --font-heading: 'Oswald', sans-serif;
+  --font-mono:    'Share Tech Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-mono);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    );
+}
+
+/* ── STICKY NAV ── */
+#main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0a0a0a;
+  border-bottom: 2px solid var(--tape);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+#main-nav::-webkit-scrollbar { display: none; }
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  color: var(--tape);
+  letter-spacing: 2px;
+  padding: 0 16px;
+  white-space: nowrap;
+  border-right: 1px solid var(--border);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+  padding: 0 16px;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--chalk-dim);
+  text-decoration: none;
+  white-space: nowrap;
+  border-right: 1px solid var(--border);
+  transition: color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+.nav-link:hover { color: var(--tape); background: rgba(245,197,24,0.06); }
+.nav-link.locked { opacity: 0.4; cursor: default; }
+.nav-link .lock-icon { font-size: 10px; }
+
+/* ── HEADER ── */
+#site-header {
+  position: relative;
+  padding: 48px 24px 40px;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.tape-stripe {
+  position: absolute;
+  top: 18px;
+  left: 0; right: 0;
+  height: 28px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--tape) 0px,
+    var(--tape) 120px,
+    #0a0a0a 120px,
+    #0a0a0a 124px
+  );
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.tape-text {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 600;
+  color: #0a0a0a;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  animation: scroll-tape 18s linear infinite;
+  padding-left: 100%;
+}
+@keyframes scroll-tape {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.header-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 6vw, 52px);
+  color: var(--tape);
+  letter-spacing: 3px;
+  margin-top: 32px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.8);
+}
+.header-sub {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  color: var(--chalk-dim);
+  letter-spacing: 4px;
+  margin-top: 8px;
+}
+.case-number {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+}
+
+/* ── SECTION WRAPPER ── */
+.section-block {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-label {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--tape);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 4vw, 36px);
+  color: var(--chalk);
+  margin-bottom: 24px;
+}
+
+/* ── LOCK CARD ── */
+.lock-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+}
+.lock-card .lock-big { font-size: 40px; margin-bottom: 16px; }
+.lock-card p {
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+  color: var(--chalk-dim);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.lock-input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--tape);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 220px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.lock-input:focus { border-color: var(--tape); }
+.lock-btn {
+  display: block;
+  margin: 12px auto 0;
+  background: var(--tape);
+  color: #0a0a0a;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.lock-btn:active { transform: scale(0.97); }
+.lock-error {
+  color: #e05555;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  min-height: 18px;
+}
+
+/* ── STAR RATING ── */
+.star-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 8px 0;
+}
+.star {
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--muted);
+  transition: color 0.1s, transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+.star.active { color: var(--tape); }
+.star:active { transform: scale(1.2); }
+
+/* ── UTILITY ── */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(245,197,24,0.12);
+  color: var(--tape);
+  border: 1px solid rgba(245,197,24,0.3);
+}
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}

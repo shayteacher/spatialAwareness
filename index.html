@@ -29,6 +29,9 @@
       <a class="nav-link locked" href="#section-level3" data-section="level3">
         <span class="lock-icon">🔒</span> LVL 3
       </a>
+      <a class="nav-link locked" href="#section-level35" data-section="level35">
+        <span class="lock-icon">🔒</span> HOW TO PLAY
+      </a>
       <a class="nav-link locked" href="#section-level4" data-section="level4">
         <span class="lock-icon">🔒</span> LVL 4
       </a>
@@ -965,6 +968,37 @@
       </div>
     </section>
 
+    <!-- SECTION: LEVEL 3.5 -->
+    <section id="section-level35" class="section-block">
+      <div class="section-label">LEVEL 3.5</div>
+      <div class="section-title">How To Play</div>
+
+      <!-- LOCK GATE -->
+      <div id="level35-lock">
+        <div class="lock-card">
+          <div class="lock-big">🔒</div>
+          <p>ENTER ACCESS CODE TO UNLOCK THIS SECTION</p>
+          <input
+            class="lock-input"
+            type="text"
+            placeholder="_ _ _ _ _ _"
+            autocomplete="off"
+            autocapitalize="characters"
+            id="lock-input-level35"
+          />
+          <button class="lock-btn" onclick="checkPassword('level35')">
+            UNLOCK
+          </button>
+          <div class="lock-error" id="lock-error-level35"></div>
+        </div>
+      </div>
+
+      <!-- SECTION BODY -->
+      <div id="level35-body" style="display: none">
+        <div id="l35-app"></div>
+      </div>
+    </section>
+
     <!-- SECTION: LEVEL 4 -->
     <section id="section-level4" class="section-block">
       <div class="section-label">LEVEL 04</div>
@@ -1013,6 +1047,7 @@
     <script src="sections/level1.js"></script>
     <script src="sections/level2.js"></script>
     <script src="sections/level3.js"></script>
+    <script src="sections/level3-5.js"></script>
     <script src="sections/level4.js"></script>
     <script src="sections/level5.js"></script>
 
@@ -1023,6 +1058,7 @@
         initLevel1();
         initLevel2();
         initLevel3();
+        initLevel35();
         initLevel4();
 
         document.querySelectorAll(".nav-link.locked").forEach((link) => {
